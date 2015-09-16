@@ -9,6 +9,7 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 import views.html.index;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -71,5 +72,9 @@ public class Application extends Controller {
             te.printStackTrace();
             return internalServerError();
         }
+    }
+
+    public static Result getImage(){
+        return ok(new File("public/images/collage.png"));
     }
 }

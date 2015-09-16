@@ -5,6 +5,7 @@
 # Home page
 GET        /                                     controllers.Application.index
 GET        /collage                              controllers.Application.getCollage
+GET        /getImage                             controllers.Application.getImage
 GET        /friends/:screenName/:numHoriz        controllers.Application.createFriendsCollage(screenName: String, numHoriz: Int)
 GET        /followers/:screenName/:numHoriz      controllers.Application.createFollowersCollage(screenName: String, numHoriz: Int)
 
